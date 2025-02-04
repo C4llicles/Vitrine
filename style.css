@@ -1,8 +1,12 @@
+body {
+    background-color: rgb(255, 244, 231);
+    font-family: Arial, Helvetica, sans-serif;
+}
 .card {
     position: relative;
     width: 300px;
     height: 200px;
-    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    background: linear-gradient(-45deg, #8aff04 0%, #02ffc4 100% );
     border-radius: 10px;
     display: flex;
     align-items: center;
