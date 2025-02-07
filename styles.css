@@ -78,7 +78,7 @@ body {
 .card {
     position: relative;
     width: 300px;
-    height: 200px;
+    height: 300px;
     background: linear-gradient(-45deg, #8aff04 0%, #02ffc4 100% );
     border-radius: 10px;
     display: flex;
@@ -86,6 +86,7 @@ body {
     justify-content: center;
     overflow: hidden;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+    margin-top: 30px;
   }
   
   .card svg {
