@@ -1,6 +1,79 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial';
+}
+
+/* Style for the page selection banner */
+.page-selection-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000; /* Fond noir */
+  padding: 20px; /* Augmente la hauteur du bandeau */
+  position: fixed; /* Fixe le bandeau en haut de la page */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Assure que le bandeau est au-dessus des autres éléments */
+}
+
+.page-selection-banner a {
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px; /* Augmente la taille des boutons */
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.1s;
+  font-size: 18px; /* Augmente la taille du texte des boutons */
+}
+
+.page-selection-banner a:hover {
+  background-color: #710009;
+}
+
+/* Button styles */
+.button {
+appearance: none;
+border: none; /* Supprime la bordure */
+background: none;
+cursor: pointer;
+position: relative;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+transition: all .15s ease;
+}
+
+.button_sl {
+display: block;
+position: absolute;
+top: 0;
+bottom: -1px;
+left: -8px;
+width: 0;
+background-color: #ff0303;
+transform: skew(-15deg);
+transition: all .2s ease;
+}
+
+.button_text {
+position: relative;
+}
+
+.button:hover {
+color: #000000;
+}
+
+.button:hover .button_sl {
+width: calc(100% + 15px);
+}
+
 body {
     background-color: rgb(255, 244, 231);
     font-family: Arial, Helvetica, sans-serif;
+    padding-top: 70px;
 }
 .card {
     position: relative;
